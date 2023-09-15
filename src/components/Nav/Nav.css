@@ -1,0 +1,31 @@
+nav {
+    display: flex;
+    width: 100%;
+    max-width: 1240px;
+    margin: auto;
+    margin-top: 45px;
+}
+
+.nav-links {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #FF6060;
+    font-size: 24px;
+    padding-left: 2em;
+}
+
+.nav-links li a:hover {
+    border-bottom: 1px solid #FF6060;
+}
+
+.logo {
+    width: 210px;
+}
