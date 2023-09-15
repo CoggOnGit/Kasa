@@ -1,11 +1,15 @@
+
+
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import App from './components/App/App';
+import { annonceList } from './data/annonceList'; // Pas besoin de spécifier l'extension .js
 
+const root = document.getElementById('root');
 
-ReactDOM.render(
+const reactRoot = createRoot(root);
+reactRoot.render(
   <React.StrictMode>
-    <App/>
-  </React.StrictMode>,
-  document.getElementById('root')
+    <App data={annonceList} />
+  </React.StrictMode>
 );

@@ -1,15 +1,27 @@
-/* import React from 'react';
-import './Gallery.css';
-import Card from '../Card/Card.jsx'
 
-function Gallery({ data }) {
+
+import React from 'react';
+import './Gallery.css';
+import Card from '../Card/Card.jsx'; 
+import { annonceList } from '../../data/annonceList'; 
+
+function Gallery() {
   return (
     <div className="gallery">
-      {data.map((item) => (
-        <Card key={item.id} title={item.title} image={item.cover} />
+      {annonceList.map((annonce) => (
+        <Card
+          key={annonce.id}
+          title={annonce.title}
+          image={annonce.cover}
+        />
       ))}
     </div>
   );
 }
 
-export default Gallery; */
+export default Gallery;
+
+
+
+
+
