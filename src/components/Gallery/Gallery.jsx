@@ -7,6 +7,7 @@ import { annonceList } from '../../data/annonceList';
 
 function Gallery() {
   return (
+    <div className="all-gallery">
     <div className="gallery">
       {annonceList.map((annonce) => (
         <Card
@@ -15,6 +16,7 @@ function Gallery() {
           image={annonce.cover}
         />
       ))}
+    </div>
     </div>
   );
 }

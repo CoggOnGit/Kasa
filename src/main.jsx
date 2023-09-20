@@ -2,8 +2,8 @@
 
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import App from './components/App/App';
-import { annonceList } from './data/annonceList'; // Pas besoin de spécifier l'extension .js
+import App from './components/App/App.jsx';
+import { annonceList } from './data/annonceList'; 
 
 const root = document.getElementById('root');
 

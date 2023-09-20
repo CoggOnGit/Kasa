@@ -1,0 +1,12 @@
+.banner2 img{
+    object-fit: cover;   
+    width: 100%;
+    max-width: 77.5em;
+    height: 223px;
+    border-radius: 25px;
+    display: flex;
+    margin-top: 26px;
+    margin-bottom: 43px;
+    margin-right: auto;
+    margin-left: auto;
+}

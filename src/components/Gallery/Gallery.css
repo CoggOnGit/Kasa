@@ -1,16 +1,23 @@
 .gallery {
-    max-width: 1240px;
+    max-width: 1140px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    background-color: #F6F6F6;
     margin: auto;
     border-radius: 25px;
     margin-bottom: 50px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 60px 0;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 60px;
     justify-content: center;
     align-content: center;
     padding: 56px 0;
+}
+
+.all-gallery {
+    max-width: 1240px;
+    width: 100%;    
+    margin: auto;
+    background-color: #F6F6F6;
+    border-radius: 25px;
 }

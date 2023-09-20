@@ -1,12 +1,14 @@
 import React from 'react';
-import Nav from './Nav'; // Importez votre composant de navigation ici
+import Banner from "../../components/Banner/Banner.jsx";
+import Gallery from '../../components/Gallery/Gallery.jsx'; 
 
-function LayoutHome({ children }) {
+function Accueil() {
   return (
-    <body> 
-        {children}
-    </body>
+    <section>
+      <Banner />
+      <Gallery />
+    </section>
   );
 }
 
-export default LayoutHome;
+export default Accueil;

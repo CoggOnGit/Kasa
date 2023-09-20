@@ -1,28 +1,31 @@
-
-
 import React from 'react';
-import './App.css';
-import { BrowserRouter as Router } from 'react-router-dom'; 
-import Nav from '../Nav/Nav.jsx'; 
-import Banner from '../Banner/Banner.jsx'; 
-import Gallery from '../Gallery/Gallery.jsx'; 
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Nav from '../Nav/Nav.jsx';
 import Footer from '../Footer/Footer.jsx'; 
+import Accueil from '../../pages/Accueil/Accueil.jsx';
+import About from '../../pages/About/About.jsx';
+import './App.css';
+
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <header>
         <Nav />
       </header>
       <main>
-        <Banner />
-        <Gallery />
+      <Routes>
+        <Route path="/" element={<Accueil />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
       </main>
       <footer>
         <Footer />
       </footer>
-    </Router>
+      </BrowserRouter>
   );
 }
 
 export default App;
+
+
