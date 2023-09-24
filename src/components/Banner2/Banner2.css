@@ -1,8 +1,7 @@
 .banner2 img{
     object-fit: cover;   
-    width: 100%;
-    max-width: 77.5em;
-    height: 223px;
+    width: 85%; /* Pour maintenir le rapport hauteur/largeur de l'image */
+    height: 30vh;
     border-radius: 25px;
     display: flex;
     margin-top: 26px;
@@ -10,3 +9,14 @@
     margin-right: auto;
     margin-left: auto;
 }
+
+@media screen and (max-width: 600px) {
+    .banner2 img {
+        height: 111px;
+        width: 85%;
+        border-radius: 10px;
+        margin-bottom: 22px;
+    }
+
+} 
+

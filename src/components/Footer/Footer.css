@@ -17,4 +17,15 @@
     font-size: 24px;
     font-weight: 500;
     margin: 31px 0 31px 0;
+    width: 50%;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .footer-text {
+        font-size: 12px;
+        width: 45%;
+        margin-top: 15px;
+        margin-bottom: 50px;
+    }
 }

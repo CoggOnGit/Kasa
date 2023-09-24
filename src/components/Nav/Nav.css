@@ -1,7 +1,6 @@
 nav {
     display: flex;
-    width: 100%;
-    max-width: 1240px;
+    width: 85%;
     margin: auto;
     margin-top: 45px;
 }
@@ -18,8 +17,9 @@ nav {
 .nav-links li a {
     text-decoration: none;
     color: #FF6060;
-    font-size: 24px;
-    padding-left: 2em;
+    font-size: 1.5em;
+    margin-left: 2em;
+    white-space: nowrap;
 }
 
 .nav-links li a:hover {
@@ -27,5 +27,30 @@ nav {
 }
 
 .logo {
-    width: 210px;
+    display: flex;
+    align-items: center;
+    width: 20%;
 }
+
+.logo img{
+    width: 100%;
+    max-width: 250px;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        width: 85%;
+        height: 46px;
+        margin-top: 20px;
+    }
+
+    .nav-links li a {
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 35%;
+    }
+
+
+  }
