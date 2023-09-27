@@ -6,6 +6,7 @@ import Accueil from '../../pages/Accueil/Accueil.jsx';
 import About from '../../pages/About/About.jsx';
 import Logements from '../../pages/Logements/Logements.jsx';
 import { annonceList } from '../../data/annonceList';
+import Error from '../../pages/Error/Error.jsx';
 import './App.css';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             path="/logements/:id"
             element={<Logements data={annonceList} />}
           />
+          <Route path="/*" element={<Error />} />
         </Routes>
       </main>
       <footer>
