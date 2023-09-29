@@ -1,0 +1,10 @@
+.about-content{
+    width:  70%;
+    margin: auto;
+    height: 100%;
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 600px) {    
+            width: 85%;
+    }
+}

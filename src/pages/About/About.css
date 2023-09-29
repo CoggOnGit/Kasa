@@ -1,13 +1,13 @@
-.about-content{
-    width:  70%;
-    margin: auto;
-    height: 100%;
-    margin-bottom: 40px;
-
+.about-content {
+  width: 70%;
+  margin: auto;
+  height: 100%;
+  margin-bottom: 40px;
 }
-
 @media screen and (max-width: 600px) {
-    .about-content {       
-        width: 85%;
-    }
+  .about-content {
+    width: 85%;
+  }
 }
+
+/*# sourceMappingURL=About.css.map */
