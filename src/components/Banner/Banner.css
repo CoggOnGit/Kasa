@@ -3,7 +3,7 @@ section.banner {
   background-image: url("../../assets/ImgBanner.jpg");
   background-size: cover;
   background-position: center;
-  color: #fff;
+  color: white;
   text-align: center;
   border-radius: 25px;
   display: flex;

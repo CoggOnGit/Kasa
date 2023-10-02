@@ -1,8 +1,10 @@
+@import '../../../variables';
+
 .banner2 img{
     object-fit: cover;   
-    width: 85%; /* Pour maintenir le rapport hauteur/largeur de l'image */
+    width: $width-large; 
     height: 30vh;
-    border-radius: 25px;
+    border-radius: $border-radius;
     display: flex;
     margin-top: 26px;
     margin-bottom: 43px;
@@ -11,7 +13,7 @@
 
     @media screen and (max-width: 600px) {
             height: 111px;
-            width: 85%;
+            width: $width-large;
             border-radius: 10px;
             margin-bottom: 22px;
     } 

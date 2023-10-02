@@ -1,5 +1,7 @@
+@import '../../../variables';
+
 .logement-main {
-    width: 85%;
+    width: $width-large;
     margin: auto;
     margin-bottom: 30px;
 
@@ -23,7 +25,7 @@
           
                   .slider-wrapper {
                     height: 415px;
-                    border-radius: 25px;
+                    border-radius: $border-radius;
                     overflow: hidden;
 
                     @media screen and (max-width: 700px) {
@@ -56,7 +58,7 @@
                             max-width: 100%;
                             max-height: 100%;
                             object-fit: cover;
-                            border-radius: 25px;
+                            border-radius: $border-radius;
 
                             @media screen and (max-width: 700px) {
                                 height: 100%;
@@ -74,7 +76,7 @@
                     transform: translateY(-50%);
                     cursor: pointer;
                     z-index: 1;
-                    color: white;
+                    color: $primary-color;
           
                     &.custom-prev-arrow {
                       left: 10px;
@@ -132,36 +134,36 @@
             h1 {
                 width: 90%;
                 font-size: 36px;
-                color: #FF6060 ;
+                color: $primary-color ;
                 font-weight: 500;
                 margin-top: 0px;
 
                 @media screen and (max-width: 600px) {
                     width: 100%;
-                    font-size: 18px;
+                    font-size: $font-size-large;
                 }
             }
 
             h2 {
-                font-size: 18px;
-                color: #FF6060;
+                font-size: $font-size-large;
+                color: $primary-color;
                 font-weight: 500;
 
                 @media screen and (max-width: 600px) {
-                    font-size: 14px;
+                    font-size: $font-size-medium;
                 }
             }
 
             .tag {
                 margin-right: 10px;
-                background-color: #FF6060;
-                color: white;
+                background-color: $primary-color;
+                color: $secondary-color;
                 padding: 7px 30px;
                 border-radius: 10px;
                 display: inline-block;
                 text-align: center;
                 vertical-align: middle;
-                font-size: 14px;
+                font-size: $font-size-medium;
                 margin-left: auto;
                 margin-top: 20px;
 
@@ -195,13 +197,13 @@
                     flex-direction: column;
                     justify-content: center;
                     text-align: end;
-                    color: #FF6060;
+                    color: $primary-color;
                     font-size: 18px;
                     font-weight: 500;
                     margin: 0;
 
                     @media screen and (max-width: 600px) {
-                        font-size: 12px;
+                        font-size: $font-size-small;
                     }
                 }
 
@@ -264,7 +266,7 @@
         }
 
         h2 {
-            color: white;
+            color: $secondary-color;
         }
 
         .collapse-content{
@@ -284,11 +286,11 @@
                 width: 90%;
                 padding: 20px 0;
                 margin: auto;
-                font-size: 18px;
+                font-size: $font-size-large;
                 font-weight: 400;
 
                 @media screen and (max-width: 600px) {
-                    font-size: 12px;
+                    font-size: $font-size-small;
                 }
             }
         }

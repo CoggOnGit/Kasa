@@ -1,6 +1,6 @@
 .banner2 img {
   object-fit: cover;
-  width: 85%; /* Pour maintenir le rapport hauteur/largeur de l'image */
+  width: 85%;
   height: 30vh;
   border-radius: 25px;
   display: flex;

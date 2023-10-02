@@ -1,6 +1,8 @@
+@import '../../../variables';
+
 .error-main {
-    width: 85%;
-    color: #FF6060;
+    width: $width-large;
+    color: $primary-color;
     margin: auto;
     text-align: center;
     margin-bottom: 139px;
@@ -26,16 +28,16 @@
         margin-bottom: 139px;
 
         @media screen and (max-width: 600px) {
-            font-size: 18px;
+            font-size: $font-size-large;
             margin-bottom: 113px;
         }
     }
 
     a {
-        color: #FF6060;
+        color: $primary-color;
 
         @media screen and (max-width: 600px) {
-            font-size: 14px;
+            font-size: $font-size-medium;
         }
     }
 }

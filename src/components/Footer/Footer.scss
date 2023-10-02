@@ -1,6 +1,8 @@
+@import '../../../variables';
+
 .footer {
     background-color: black;
-    color: white;
+    color: $secondary-color;
     height: 209px;
     width: 100%;
     display: flex;
@@ -13,14 +15,14 @@
     }
 
     h2 {
-            font-size: 24px;
+            font-size: $font-size-title;
             font-weight: 500;
             margin: 31px 0 31px 0;
             width: 50%;
             text-align: center;
 
             @media screen and (max-width: 600px) {
-                    font-size: 12px;
+                    font-size: $font-size-small;
                     width: 45%;
                     margin-top: 15px;
                     margin-bottom: 50px;
