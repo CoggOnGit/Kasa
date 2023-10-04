@@ -1,4 +1,5 @@
-@import '../../../variables';
+@import '../../scss/utils/variables';
+@import '../../scss/utils/mixins';
 
 .card {
     position: relative;
@@ -10,7 +11,7 @@
     max-height: 340px;
     height: 100%;
 
-    @media screen and (max-width: 600px) {
+    @include respondTo(xs) {
           margin-bottom: 20px;
           margin: auto;
           max-width: 335px;

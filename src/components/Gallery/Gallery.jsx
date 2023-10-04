@@ -1,5 +1,5 @@
 import React from 'react';
-import './Gallery.css';
+import './Gallery.scss';
 import Card from '../Card/Card.jsx';
 import { Link } from 'react-router-dom';
 import { annonceList } from '../../data/annonceList';

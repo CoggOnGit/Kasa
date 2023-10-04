@@ -1,14 +1,16 @@
+@import '/src/scss/utils/variables';
+@import '/src/scss/utils/mixins';
+
 body {
     font-family: 'Montserrat', sans-serif; 
     margin: auto;
     margin: 0;
     padding: 0;
-    display: flex;
     place-items: center;
     width: 100%;
-    flex-direction: column;
+    @include displayFlex(null, null, column);
     
-    @media screen and (max-width: 2000px) {
+    @include respondTo(sl) {
             width: 100% !important;
         }
 

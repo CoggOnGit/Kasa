@@ -3,10 +3,11 @@ import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import './Logements.css';
+import './Logements.scss';
 import Rating from "../../components/Rating/Rating.jsx";
 import Collapse from "../../components/Collapse/Collapse.jsx";
 import { CustomPrevArrow, CustomNextArrow } from "../../components/Arrow/Arrow.jsx";
+import Error from '../Error/Error.jsx';
 
 function Logements({ data }) {
   const navigate = useNavigate();
@@ -14,8 +15,7 @@ function Logements({ data }) {
   const selectedCard = data.find((annonce) => annonce.id === id);
 
   if (!selectedCard) {
-    navigate.push('/error');
-    return null;
+    return <Error/>
   }
 
   const { pictures } = selectedCard;
@@ -36,7 +36,7 @@ function Logements({ data }) {
         >
           {pictures.map((picture, index) => (
             <div key={index}>
-              <img src={picture} alt={`Image ${index}`} />
+              <img src={picture} alt={selectedCard.title} />
             </div>
           ))}
         </Carousel>

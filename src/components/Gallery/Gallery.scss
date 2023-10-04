@@ -1,12 +1,13 @@
-@import '../../../variables';
+@import '../../scss/utils/variables';
+@import '../../scss/utils/mixins';
 
 .all-gallery {
     width: $width-large;    
-    background-color: $secondary-color;
+    background-color:#F6F6F6;
     border-radius: $border-radius;
     margin: auto;
 
-    @media screen and (max-width: 600px) {
+    @include respondTo(xs) {
             width: 100%;
             background-color: $secondary-color;
         }
@@ -20,16 +21,13 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 30px;
-        justify-content: space-between;
-        align-content: center;
         padding: 56px 0;
-        flex-wrap: wrap;
 
         a {
             width: 100%;
             height: 340px;
 
-            @media screen and (max-width: 600px) {
+            @include respondTo(xs) {
                 height: 255px;
             }
         }
@@ -42,11 +40,9 @@
                 grid-template-columns: repeat(1, 1fr);
         }
 
-        @media screen and (max-width: 600px) {
+        @include respondTo(xs) {
             width: 85%;
             padding: 0;
-            display: flex;
-            flex-direction: column;
         }
     }
 }

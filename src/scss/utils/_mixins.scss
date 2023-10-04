@@ -1,0 +1,27 @@
+@mixin displayFlex($justify:null, $align:null, $direction:null, $gap:null){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    gap: $gap;
+}
+
+@mixin respondTo($breakpoint){
+    @if ($breakpoint == xs){
+        @media screen and (max-width: 600px){
+            @content;
+        }
+    }
+
+    @if ($breakpoint == sm){
+        @media screen and (max-width: 700px){
+            @content;
+        }
+    }
+
+    @if ($breakpoint == sl){
+        @media screen and (max-width: 2000px){
+            @content;
+        }
+    }
+}

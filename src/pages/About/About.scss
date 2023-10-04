@@ -1,4 +1,5 @@
-@import '../../../variables';
+@import '../../scss/utils/variables';
+@import '../../scss/utils/mixins';
 
 .about-content{
     width:  70%;
@@ -6,14 +7,14 @@
     height: 100%;
     margin-bottom: 40px;
 
-    @media screen and (max-width: 600px) {    
+    @include respondTo(xs) {    
         width: $width-large;
     }
 
     .collapse-content p{
         font-size: $font-size-large;
 
-        @media screen and (max-width: 600px) {    
+        @include respondTo(xs) {    
             font-size: $font-size-small;
         }
     }

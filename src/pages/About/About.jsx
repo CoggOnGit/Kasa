@@ -1,5 +1,5 @@
 import React from 'react';
-import './About.css';
+import './About.scss';
 import Banner2 from "../../components/Banner2/Banner2.jsx";
 import Collapse from "../../components/Collapse/Collapse.jsx";
 

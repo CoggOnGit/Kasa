@@ -7,7 +7,7 @@ import About from '../../pages/About/About.jsx';
 import Logements from '../../pages/Logements/Logements.jsx';
 import { annonceList } from '../../data/annonceList';
 import Error from '../../pages/Error/Error.jsx';
-import './App.css';
+import './App.scss';
 
 function App() {
   return (

@@ -1,23 +1,23 @@
-@import '../../../variables';
+@import '../../scss/utils/variables';
+@import '../../scss/utils/mixins';
 
 nav {
-    display: flex;
+    @include displayFlex;
     width: $width-large;
     margin: auto;
     margin-top: 45px;
 
-    @media screen and (max-width: 600px) {
+    @include respondTo(xs) {
         width: $width-large;
         height: 46px;
         margin-top: 20px;
     }
 
     .logo {
-        display: flex;
-        align-items: center;
+        @include displayFlex(null, center);
         width: 20%;
 
-        @media screen and (max-width: 600px) {
+       @include respondTo(xs) {
             width: 35%;
         }
 
@@ -29,8 +29,7 @@ nav {
 
     .nav-links {
         margin-left: auto;
-        display: flex;
-        align-items: center;
+        @include displayFlex(null, center);
         list-style: none;
         padding: 0;
 
@@ -41,11 +40,12 @@ nav {
             margin-left: 2em;
             white-space: nowrap;
 
-            &:hover {
+            &:hover,
+            &.active {
                 border-bottom: 1px solid $primary-color;
             }
 
-            @media screen and (max-width: 600px) {
+            @include respondTo(xs) {
                 font-size: $font-size-medium;
             }
         }

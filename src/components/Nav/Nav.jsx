@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from '../../assets/logo.png'; 
-import './Nav.css';
-import { Link } from 'react-router-dom';
+import './Nav.scss';
+import { NavLink } from 'react-router-dom';
 
 function Nav() {
   return (
@@ -10,8 +10,8 @@ function Nav() {
         <img src={Logo} alt="Logo Kasa" />
       </div>
       <ul className="nav-links">
-        <li><Link to="/">Accueil</Link></li>
-        <li><Link to="/about">À Propos</Link></li>
+        <li><NavLink to="/">Accueil</NavLink></li>
+        <li><NavLink to="/about">À Propos</NavLink></li>
       </ul>
     </nav>
   );
