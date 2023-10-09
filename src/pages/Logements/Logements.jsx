@@ -1,16 +1,12 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './Logements.scss';
 import Rating from "../../components/Rating/Rating.jsx";
+import Carousel from "../../components/Carousel/Carousel.jsx";
 import Collapse from "../../components/Collapse/Collapse.jsx";
-import { CustomPrevArrow, CustomNextArrow } from "../../components/Arrow/Arrow.jsx";
-import Error from '../Error/Error.jsx';
+import Error from "../Error/Error.jsx";
 
 function Logements({ data }) {
-  const navigate = useNavigate();
   const { id } = useParams();
   const selectedCard = data.find((annonce) => annonce.id === id);
 
@@ -18,28 +14,10 @@ function Logements({ data }) {
     return <Error/>
   }
 
-  const { pictures } = selectedCard;
-  const shouldHideCarouselStatus = pictures.length === 1;
-
   return (
     <div className='logement-main'>
       <div className="banner-container">
-        <Carousel
-          className={`carousel-container ${shouldHideCarouselStatus ? 'hide-status' : ''}`}
-          infiniteLoop={true}
-          renderArrowPrev={(onClickHandler, hasPrev, label) =>
-            hasPrev && <CustomPrevArrow onClick={onClickHandler} />
-          }
-          renderArrowNext={(onClickHandler, hasNext, label) =>
-            hasNext && <CustomNextArrow onClick={onClickHandler} />
-          }
-        >
-          {pictures.map((picture, index) => (
-            <div key={index}>
-              <img src={picture} alt={selectedCard.title} />
-            </div>
-          ))}
-        </Carousel>
+      <Carousel pictures={selectedCard.pictures} />
       </div>
 
       <div className='logement-details'>

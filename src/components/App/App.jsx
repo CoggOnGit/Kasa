@@ -23,7 +23,7 @@ function App() {
             path="/logements/:id"
             element={<Logements data={annonceList} />}
           />
-          <Route path="/*" element={<Error />} />
+          <Route path="*" element={<Error />} />
         </Routes>
       </main>
       <footer>
